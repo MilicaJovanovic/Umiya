@@ -1,1 +1,44 @@
-/* Empty. Add your own CSS if you like */
+.header {
+	display: block;
+	float: left;
+	height: 100px;
+    background: #53A456;
+    background: -webkit-linear-gradient(#53A456, #ADF3B0);
+    background: -o-linear-gradient(#53A456, #ADF3B0);
+    background: -moz-linear-gradient(#53A456, #ADF3B0);
+    background: linear-gradient(#53A456, #ADF3B0);
+}
+.headerTitleDiv {
+	width: 65%;
+	float: left;
+}
+.headerTitle {
+	float: left;
+	font-size: 52px;
+	color: white;
+	margin-left: 20px !important;
+	margin-top: 10px !important;
+}
+.userInfo {
+	float: left;
+	width: 35%;
+	padding-left: 5%;
+}
+.welcome {
+	font-size: 2em;
+	color: white;
+	float: left;
+	margin-top: 30px !important;
+	margin-right: 10%;
+}
+.logoutBtn {
+	float: left;
+	width: 40%;
+	height: 60px;
+	border: none !important;
+	background-color: #337AB7;
+	color: white;
+	border-radius: 5px;
+	font-size: 2em !important;
+	margin-top: 20px;
+}
