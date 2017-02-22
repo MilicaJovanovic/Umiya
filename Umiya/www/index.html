@@ -16,6 +16,9 @@
       }
     </script>-->
 
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
@@ -49,7 +52,18 @@
       <ion-content>
         <div class="leftDiv">
           <div class="menuBar">
-            
+            <div class="menuBarPart firstMenuBarPart">
+              <p class="menuBarPartText">All</p>
+            </div>
+            <div class="menuBarPart">
+              <p class="menuBarPartText">Cold drinks</p>
+            </div>
+            <div class="menuBarPart">
+              <p class="menuBarPartText">Ciggarete</p>
+            </div>
+            <div class="menuBarPart">
+              <p class="menuBarPartText">Water</p>
+            </div>
           </div>
 
           <div class="menuItems">
@@ -146,7 +160,7 @@
           </table>
 
           <div class="cart">
-            <div class="cartPart">
+            <div class="cartPart" id="total">
               <div class="cartPartTitle">
                 Total
               </div>
