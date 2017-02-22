@@ -366,6 +366,11 @@
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6); 
 	-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
+.loginTitle {
+	text-align: center; 
+	font-size: 2.8em; 
+	padding-top: 30px !important;
+}
 .loginInput {
 	width: 90%;
 	margin-left: 5%;
@@ -376,6 +381,22 @@
 	height: 40px;
 	font-size: 14px;
 	padding-left: 10px !important;
+}
+.loginBtn {
+	width: 90%; 
+	margin-left: 5%; 
+	border-radius: 8px; 
+	height: 90px; 
+	font-size: 1.5em; 
+	color: white; 
+	background-color: #4c9c4f; 
+	margin-top: 30px;
+}
+
+/*Amount page*/
+.amoutSubTitle {
+	text-align: center; 
+	font-size: 1.5em;
 }
 
 ion-content.padding.scroll-content.ionic-scroll.overflow-scroll.has-tabs {
