@@ -1,3 +1,129 @@
-.modalHeader {
-	background-color: red;
+.holdModal {
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
+.holdModalHeader {
+	background-color: #dd9a65;
+}
+.holdModalHeaderTitle {
+	color: white;
+	font-size: 1.4em;
+	margin-left: 10px;
+	margin-top: 5px !important;
+}
+.tableHeader {
+	width: 95%;
+	height: 40px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	border-radius: 8px;
+	border: 2px solid gray;
+}
+.tableHeaderItem {
+	display: block;
+	float: left;
+	width: 25%;
+	height: 36px;
+	font-size: 1.3em;
+	text-align: center;
+	color: gray;
+	border-right: 2px solid gray;
+	padding-top: 6px;
+}
+.subtotal {
+	color: white;
+	border: none;
+	background: #dd9a65;
+	border-bottom-right-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.dataTable {
+	background: #4c9c4f !important;
+	width: 95% !important;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   color: white;
+   font-size: 1.2em;
+}
+.dataTableRow {
+	height: 30px !important;
+}
+.dataTableItemInfo {
+	width: 25%;
+	text-align: center;
+}
+.dataTableItemName {
+	width: 25%;
+	text-align: left;
+	padding-left: 20px !important;
+}
+.holdModalInput {
+	width: 95%;
+	height: 45px !important;
+	margin-left: 2.5%;
+	border: 1px solid black !important;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-bottom: 8px;
+	height: 40px;
+	font-size: 1.4em !important;
+	padding-left: 10px !important;
+	margin-top: 15px;
+}
+.cartOrder {
+	margin-top: 10px; 
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+.cartOrderRow {
+	width: 100%;
+	display: block;
+}
+.cartOrderButtonOrange {
+	width: 48%;
+	float: left;
+	display: inline;
+	background: #dd9a65;
+	height: 50px;
+	border-radius: 30px;
+	text-align: center;
+	padding-top: 15px;
+	border-top: 2px solid #337ab7;
+	margin-top: 10px;
+}
+.buttonIcon {
+	color: white;
+	display: inline;
+	font-size: 1.6em;
+	margin-right: 5px;
+}
+.buttonText {
+	color: white;
+	display: inline;
+	font-size: 1.6em;
+}
+.cartOrderButtonGreen {
+	width: 48%;
+	float: left;
+	display: inline;
+	background: #4c9c4f;
+	height: 50px;
+	border-radius: 30px;
+	text-align: center;
+	padding-top: 15px;
+	border-top: 2px solid #337ab7;
+	margin-top: 10px;
+}
+
