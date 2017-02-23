@@ -5,7 +5,7 @@
           <h1 class="headerTitle">Umiya</h1>
         </div>
         <div class="userInfo">
-          <button class="logoutBtn" ng-click="logout()">Logout</button>
+          <button class="logoutBtn" ng-click="openLogoutModal()">Logout</button>
           <h6 class="welcome">Welcome, umisan</h6>
         </div>
       </ion-header-bar>
@@ -120,7 +120,7 @@
 
           <div class="cartOrder">
             <div class="cartOrderRow">
-              <div class="cartOrderButtonOrange firstOrangeBtn" ng-click="openModal()">
+              <div class="cartOrderButtonOrange firstOrangeBtn" ng-click="openHoldModal()">
                 <i class="ion-android-hand buttonIcon"></i>
                 <p class="buttonText">Hold</p>
               </div>

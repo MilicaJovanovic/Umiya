@@ -1,8 +1,8 @@
 angular.module('starter')
 .controller("HomePageController", function($scope, $state, $ionicModal) {
-	$scope.logout = function() {
-		$state.go('login');
-	}
+	// $scope.logout = function() {
+	// 	$state.go('login');
+	// }
 
 	$scope.products = [
 		{
@@ -31,17 +31,42 @@ angular.module('starter')
 	scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
-		$scope.modal = modal;
+		$scope.holdModal = modal;
 	});
-	$scope.openModal = function() {
-		$scope.modal.show();
+	$scope.openHoldModal = function() {
+		$scope.holdModal.show();
 	};
-	$scope.closeModal = function() {
-		$scope.modal.hide();
+	$scope.closeHoldModal = function() {
+		$scope.holdModal.hide();
 	};
 	// Cleanup the modal when we're done with it!
 	$scope.$on('$destroy', function() {
-		$scope.modal.remove();
+		$scope.holdModal.remove();
+	});
+	// Execute action on hide modal
+	$scope.$on('modal.hidden', function() {
+	// Execute action
+	});
+	// Execute action on remove modal
+	$scope.$on('modal.removed', function() {
+	// Execute action
+	});
+
+	$ionicModal.fromTemplateUrl('../modals/logoutModal.html', {
+	scope: $scope,
+		animation: 'slide-in-up'
+	}).then(function(modal) {
+		$scope.logoutModal = modal;
+	});
+	$scope.openLogoutModal = function() {
+		$scope.logoutModal.show();
+	};
+	$scope.closeLogoutModal = function() {
+		$scope.logoutModal.hide();
+	};
+	// Cleanup the modal when we're done with it!
+	$scope.$on('$destroy', function() {
+		$scope.logoutModal.remove();
 	});
 	// Execute action on hide modal
 	$scope.$on('modal.hidden', function() {
