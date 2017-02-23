@@ -31,48 +31,12 @@
               <p class="menuItemsTitleText">Cold drinks</p>
             </div>
 
+            <!-- Products is an array defined in HomePageController.js file. For replacing with actual data, probably received from back-end just put the return of the service into $scope.products. -->
             <div class="productList">
               <div class="productListRow">
-                <div class="product">
-                  <div class="productCircleDiv">
-                    <div class="productCircle"></div>
-                  </div>
-                  <div class="productData">
-                    <p class="productDataTitle">Fanta</p>
-                    <p class="productDataText">200ml</p>
-                    <p class="productDataText">15cl</p>
-                  </div>
-                </div>
-                <div class="product">
-                  <div class="productCircleDiv">
-                    <div class="productCircle"></div>
-                  </div>
-                  <div class="productData">
-                    <p class="productDataTitle">Fanta</p>
-                    <p class="productDataText">200ml</p>
-                    <p class="productDataText">15cl</p>
-                  </div>
-                </div>
-                <div class="product">
-                  <div class="productCircleDiv">
-                    <div class="productCircle"></div>
-                  </div>
-                  <div class="productData">
-                    <p class="productDataTitle">Fanta</p>
-                    <p class="productDataText">200ml</p>
-                    <p class="productDataText">15cl</p>
-                  </div>
-                </div>
-                <div class="product">
-                  <div class="productCircleDiv">
-                    <div class="productCircle"></div>
-                  </div>
-                  <div class="productData">
-                    <p class="productDataTitle">Fanta</p>
-                    <p class="productDataText">200ml</p>
-                    <p class="productDataText">15cl</p>
-                  </div>
-                </div>
+              	<div ng-repeat="product in products">
+              		<product-block product="product"></product-block>
+              	</div>
               </div>
             </div>
           </div>
