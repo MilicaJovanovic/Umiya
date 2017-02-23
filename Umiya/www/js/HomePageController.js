@@ -76,4 +76,29 @@ angular.module('starter')
 	$scope.$on('modal.removed', function() {
 	// Execute action
 	});
+
+	$ionicModal.fromTemplateUrl('../modals/paymentModal.html', {
+	scope: $scope,
+		animation: 'slide-in-up'
+	}).then(function(modal) {
+		$scope.paymentModal = modal;
+	});
+	$scope.openPaymentModal = function() {
+		$scope.paymentModal.show();
+	};
+	$scope.closePaymentModal = function() {
+		$scope.paymentModal.hide();
+	};
+	// Cleanup the modal when we're done with it!
+	$scope.$on('$destroy', function() {
+		$scope.paymentModal.remove();
+	});
+	// Execute action on hide modal
+	$scope.$on('modal.hidden', function() {
+	// Execute action
+	});
+	// Execute action on remove modal
+	$scope.$on('modal.removed', function() {
+	// Execute action
+	});
 });
