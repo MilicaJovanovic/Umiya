@@ -24,7 +24,7 @@ var myApp = angular.module('starter', ['ionic'])
   })
   .state('homepage', {
     url: '/homepage',
-    templateUrl: 'homePage.html',
+    templateUrl: 'templates/homePage.html',
     controller: 'HomePageController'
   });
 
