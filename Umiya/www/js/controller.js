@@ -1,3 +1,0 @@
-.controller('LoginCtrl', function($scope) {
-   
-});
