@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="../css/modalStyle.css">
+<ion-modal-view class="holdModal">
+  <ion-header-bar class="holdModalHeader">
+    <h1 class="holdModalHeaderTitle">PayTM</h1>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="qrImgDiv">
+      <!-- <img src="../img/qr.png" class="qrImg"> -->
+      <div class="qrImg"></div>
+    </div>
+    
+    <div class="payTmNoticeDiv">
+      <p class="payTmNotice">Please scan this code from your mobile and give payment to shop keeper.</p>
+    </div>
+
+    <h3 class="payTmTotal">Total payable 106</h3>
+
+    <div class="cartOrder">
+        <div class="cartOrderRow">
+	        <div class="cartOrderButtonOrangeModal payTmButton firstBtn" ng-click="cancelPayTmModal()">
+		        <i class="ion-close buttonIcon"></i>
+		        <p class="buttonText">Cancel</p>
+	       	</div>
+	       	<div class="cartOrderButtonGreenModal payTmButton">
+                <i class="ion-checkmark-round buttonIcon"></i>
+                <p class="buttonText">Save</p>
+            </div>
+       	</div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

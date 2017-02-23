@@ -202,3 +202,36 @@
 	margin-top: 20px;
 	margin-left: 15%;
 }
+
+/*PayTM modal*/
+.payTmNoticeDiv {
+	width: 50%;
+	margin-left: 25%;
+}
+.payTmNotice {
+	font-size: 1.4em;
+	text-align: justify;
+
+}
+.payTmTotal {
+	text-align: center;
+}
+.payTmButton {
+	width: 48%;
+	height: 60px;
+}
+.qrImgDiv {
+	width: 40%;
+	margin-left: 20%;
+	height: 200px;
+}
+.qrImage {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/qr.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
