@@ -5,6 +5,7 @@
           <h1 class="headerTitle">Umiya</h1>
         </div>
         <div class="userInfo">
+          <p class="dateAndTime"> {{ date }}</p>
           <button class="logoutBtn" ng-click="openLogoutModal()">Logout</button>
           <h6 class="welcome">Welcome, umisan</h6>
         </div>
@@ -59,9 +60,11 @@
               <tr class="dataTableRow">
                 <td class="dataTableItemName">{{cartRow.productName}}</td>
                 <td class="dataTableItemInfo">
-                  <button ng-click="decreaseQuantity(cartRow)" type="button">-</button>
+                  <!-- <button ng-click="decreaseQuantity(cartRow)" type="button" class="quantityBtn">-</button> -->
+                  <i class="ion-minus-circled quantityBtn" ng-click="decreaseQuantity(cartRow)"></i>
                   {{cartRow.quantity}}
-                  <button ng-click="increaseQuantity(cartRow)" type="button">+</button>
+                 <!--  <button ng-click="increaseQuantity(cartRow)" type="button" class="quantityBtn">+</button> -->
+                 <i class="ion-plus-circled quantityBtn" ng-click="increaseQuantity(cartRow)"></i>
                 </td>
                 <td class="dataTableItemInfo">{{cartRow.price}}</td>
                 <td class="dataTableItemInfo">{{cartRow.total}}</td>
