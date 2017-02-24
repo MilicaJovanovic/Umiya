@@ -1,4 +1,4 @@
-var myApp = angular.module('starter', ['ionic'])
+var myApp = angular.module('starter', ['ionic', 'ngStorage'])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
