@@ -1,9 +1,10 @@
 angular.module('starter')
 .controller("HomePageController", function($scope, $state, $ionicModal) {
 	$scope.realDate = new Date();
-	// $scope.logout = function() {
-	// 	$state.go('login');
-	// }
+	$scope.logout = function() {
+		$scope.closeLogoutModal();
+		$state.go('login');
+	}
 
 	$scope.products = [
 		{

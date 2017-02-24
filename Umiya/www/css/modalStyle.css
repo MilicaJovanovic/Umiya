@@ -1,6 +1,6 @@
 /*Hold modal*/
 .holdModal {
-	height: auto;
+	height: 70vh;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
@@ -51,34 +51,51 @@
 	border-bottom-right-radius: 7px;
 	border-top-right-radius: 7px;
 }
-.dataTable {
+.tableAreaModal {
+	margin-top: 20px;
+	min-height: 35vh;
+	max-height: 35vh !important;
+	overflow-y: auto;
+}
+@media screen and (max-height: 800px) {
+	.tableAreaModal {
+		min-height: 22vh;
+		max-height: 22vh !important;
+	}
+}
+@media screen and (max-height: 620px) {
+	.tableAreaModal {
+		min-height: 19vh;
+		max-height: 19vh !important;
+	}
+}
+.dataTableModal {
 	background: #4c9c4f !important;
 	width: 95% !important;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   color: white;
-   font-size: 1.2em;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    color: white;
+    font-size: 1.2em;
 }
-.dataTableRow {
+.dataTableRowModal {
 	height: 30px !important;
 }
-.dataTableItemInfo {
-	width: 25%;
+.dataTableItemInfoModal {
+	width: 25% !important;
 	border-left: 1px solid white;
 	text-align: center;
 }
-.subtotalData {
-	background-color: #dd9a65;
-}
-.dataTableItemName {
-	width: 25%;
+.dataTableItemNameModal {
+	width: 25% !important;
 	text-align: left;
 	padding-left: 20px !important;
+}
+.subtotalDataModal {
+	background-color: #dd9a65;
 }
 .holdModalInput {
 	width: 95%;
