@@ -1,12 +1,17 @@
 /*Hold modal*/
 .holdModal {
 	height: auto;
-	overflow-x: scroll;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+@media screen and (max-height: 620px) {
+	.holdModal {
+		margin-top: -5%;
+		height: 75vh;
+	}
 }
 .holdModalHeader {
 	background-color: #dd9a65;
@@ -138,6 +143,11 @@
 .logoutModal {
 	height: 550px;
 }
+@media screen and (max-height: 620px) {
+	.logoutModal {
+		margin-top: -9%;
+	}
+}
 .logoutBtnModal {
 	padding-top: 12px;
 	width: 70%;
@@ -191,6 +201,12 @@
 /*Payment modal*/
 .paymentModal {
 	height: 580px;
+}
+@media screen and (max-height: 620px) {
+	.paymentModal {
+		margin-top: -10%;
+		height: 95vh;
+	}
 }
 .paymentButton {
 	height: 60px;

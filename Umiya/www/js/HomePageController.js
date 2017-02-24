@@ -1,7 +1,6 @@
 angular.module('starter')
 .controller("HomePageController", function($scope, $state, $ionicModal) {
 	$scope.realDate = new Date();
-	$scope.date = $scope.realDate.getDate() + "-" + ($scope.realDate.getMonth() + 1) + "-" + $scope.realDate.getFullYear() + " " + $scope.realDate.getHours() + ":" + $scope.realDate.getMinutes();
 	// $scope.logout = function() {
 	// 	$state.go('login');
 	// }

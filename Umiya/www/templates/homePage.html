@@ -5,7 +5,7 @@
           <h1 class="headerTitle">Umiya</h1>
         </div>
         <div class="userInfo">
-          <p class="dateAndTime"> {{ date }}</p>
+          <p class="dateAndTime"><strong>{{ realDate | date:"dd-MM-yy HH:mm"}}</strong></p>
           <button class="logoutBtn" ng-click="openLogoutModal()">Logout</button>
           <h6 class="welcome">Welcome, umisan</h6>
         </div>
