@@ -26,7 +26,7 @@
 	font-size: 1.4em;
 	float: left;
 	margin-left: 10%;
-	margin-top: 25px;
+	margin-top: 28px;
 }
 .userInfo {
 	float: left;
@@ -141,6 +141,7 @@
 .menuItemsTitleText {
 	font-size: 1.1em;
 	margin-left: 10px;
+	color: white;
 }
 .productList {
 	width: 94%;
@@ -231,6 +232,7 @@
 .shoppingCartTitleText {
 	font-size: 1.1em;
 	margin-left: 10px;
+	color: white;
 }
 .tableHeader {
 	width: 95%;
@@ -267,11 +269,14 @@
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   color: white;
-   font-size: 1.2em;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    color: white;
+    font-size: 1.2em;
+}
+.dataTable tbody {
+	width: 100% !important;
 }
 .tableArea {
 	margin-top: 20px;
@@ -293,16 +298,17 @@
 }
 .dataTableRow {
 	height: 30px !important;
+	min-width: 100% !important;
 }
 .dataTableItemInfo {
-	width: 25%;
+	width: 25% !important;
 	text-align: center;
 }
 .quantityBtn {
 	font-size: 1.2em;
 }
 .dataTableItemName {
-	width: 25%;
+	width: 25% !important;
 	text-align: left;
 	padding-left: 20px !important;
 }
@@ -517,4 +523,7 @@ ion-content {
 	position: fixed;
 	bottom: 0;
 	margin-bottom: 5%;
+}
+tbody {
+	width: 300px !important;
 }

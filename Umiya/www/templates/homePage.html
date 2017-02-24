@@ -65,18 +65,16 @@
 
           <div class="tableArea">
             <table class="table dataTable">
-              <tbody ng-repeat="cartRow in cart">
-                <tr class="dataTableRow">
+              <tbody>
+                <tr class="dataTableRow" ng-repeat="cartRow in cart">
                   <td class="dataTableItemName">{{cartRow.productName}}</td>
                   <td class="dataTableItemInfo">
-                    <!-- <button ng-click="decreaseQuantity(cartRow)" type="button" class="quantityBtn">-</button> -->
                     <i class="ion-minus-circled quantityBtn" ng-click="decreaseQuantity(cartRow)"></i>
                     {{cartRow.quantity}}
-                   <!--  <button ng-click="increaseQuantity(cartRow)" type="button" class="quantityBtn">+</button> -->
                    <i class="ion-plus-circled quantityBtn" ng-click="increaseQuantity(cartRow)"></i>
                   </td>
-                  <td class="dataTableItemInfo">{{cartRow.price}}</td>
-                  <td class="dataTableItemInfo">{{cartRow.total}}</td>
+                  <td class="dataTableItemInfo">{{cartRow.price}} ₹</td>
+                  <td class="dataTableItemInfo">{{cartRow.total}} ₹</td>
                 </tr>
               </tbody>
             </table>
@@ -89,7 +87,7 @@
                   Total
                 </div>
                 <div class="cartPartData">
-                  105
+                  105 ₹
                 </div>
               </div>
               <div class="cartPart">
@@ -105,7 +103,7 @@
                   Discount
                 </div>
                 <div class="cartPartData">
-                  0
+                  0 ₹
                 </div>
               </div>
               <div class="cartPart">
@@ -113,7 +111,7 @@
                   Order Tax
                 </div>
                 <div class="cartPartData">
-                  0
+                  0 ₹
                 </div>
               </div>
             </div>
