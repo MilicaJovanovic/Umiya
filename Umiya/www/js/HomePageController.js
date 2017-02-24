@@ -26,6 +26,131 @@ angular.module('starter')
 			productName: 'Cola',
 			volume: 200,
 			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
+		},
+		{
+			productName: 'Cola',
+			volume: 200,
+			price: 17
 		}
 	]
 
@@ -47,6 +172,84 @@ angular.module('starter')
 			quantity: 2,
 			price: 15,
 			total: 30
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
 		},
 		{
 			productName : 'Vodka',
