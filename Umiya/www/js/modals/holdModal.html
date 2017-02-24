@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="css/modalStyle.css">
+<ion-modal-view class="holdModal">
+  <ion-header-bar class="holdModalHeader">
+    <h1 class="holdModalHeaderTitle">Place modal on hold</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="tableHeader">
+	    <div class="tableHeaderItem">Products</div>
+	    <div class="tableHeaderItem">QTY</div>
+	    <div class="tableHeaderItem">Price</div>
+	    <div class="tableHeaderItem subtotal">Subtotal</div>
+  	</div>
+
+  	<table class="table dataTable">
+        <tbody>
+          <tr class="dataTableRow">
+            <td class="dataTableItemName">Cola</td>
+            <td class="dataTableItemInfo">1</td>
+            <td class="dataTableItemInfo">15</td>
+            <td class="dataTableItemInfo">15</td>
+          </tr>
+          <tr class="dataTableRow"> 
+            <td class="dataTableItemName">Fanta</td>
+            <td class="dataTableItemInfo">1</td>
+            <td class="dataTableItemInfo">15</td>
+            <td class="dataTableItemInfo">30</td>
+          </tr>
+          <tr class="dataTableRow">
+            <td class="dataTableItemName">Votka</td>
+            <td class="dataTableItemInfo">3</td>
+            <td class="dataTableItemInfo">10</td>
+            <td class="dataTableItemInfo">15</td>
+          </tr>
+          <tr class="dataTableRow">
+            <td class="dataTableItemName">Beer</td>
+            <td class="dataTableItemInfo">3</td>
+            <td class="dataTableItemInfo">10</td>
+            <td class="dataTableItemInfo">15</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <input type="text" class="holdModalInput" placeholder="Enter Customer Name">
+    <input type="text" class="holdModalInput" placeholder="Enter Phone Number">
+
+    <div class="cartOrder">
+        <div class="cartOrderRow">
+	        <div class="cartOrderButtonOrangeModal" ng-click="cancelHoldModal();">
+		        <i class="ion-close buttonIcon"></i>
+		        <p class="buttonText">Cancel</p>
+	       	</div>
+	       	<div class="cartOrderButtonGreenModal">
+                <i class="ion-checkmark-round buttonIcon"></i>
+                <p class="buttonText">Save</p>
+            </div>
+       	</div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

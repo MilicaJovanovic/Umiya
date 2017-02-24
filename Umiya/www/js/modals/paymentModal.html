@@ -1,0 +1,81 @@
+<link rel="stylesheet" type="text/css" href="css/modalStyle.css">
+<ion-modal-view class="holdModal paymentModal">
+  <ion-header-bar class="holdModalHeader">
+    <h1 class="holdModalHeaderTitle">Payment</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="lines">
+        <div class="linesPart">
+          <div class="linesPartTitle">
+            Total items
+          </div>
+          <div class="linesPartData">
+            2
+          </div>
+        </div>
+
+        <div class="linesPart">
+          <div class="linesPartTitle">
+            Total paying
+          </div>
+          <div class="linesPartData">
+            1
+          </div>
+        </div>
+
+        <div class="linesPart">
+          <div class="linesPartTitle">
+            Total payable
+          </div>
+          <div class="linesPartData">
+            199
+          </div>
+        </div>
+
+        <div class="linesPart">
+          <div class="linesPartTitle">
+            Balance
+          </div>
+          <div class="linesPartData">
+            -199
+          </div>
+        </div>
+    </div>
+
+    <input type="text" class="holdModalInput" placeholder="Enter Amount">
+    
+    <div class="cartOrder">
+      <div class="cartOrderRow">
+        <div class="cartOrderButtonGreenModal paymentButton firstBtn">
+          <i class="ion-cash buttonIcon"></i>
+          <p class="buttonText">Cash</p>
+        </div>
+        <div class="cartOrderButtonGreenModal paymentButton" ng-click="openPayTmModal()">
+          <i class="ion-playstation buttonIcon"></i>
+          <p class="buttonText">PayTM</p>
+        </div>
+      </div>
+
+      <div class="cartOrderRow">
+        <div class="cartOrderButtonGreenModal paymentButton firstBtn">
+          <i class="ion-cloud buttonIcon"></i>
+          <p class="buttonText">UPI</p>
+        </div>
+        <div class="cartOrderButtonGreenModal paymentButton">
+          <i class="ion-card buttonIcon"></i>
+          <p class="buttonText">Credit Card</p>
+        </div>
+      </div>
+
+      <div class="cartOrderRow">
+        <div class="cartOrderButtonBlueModal">
+          <i class="ion-checkmark-round buttonIcon"></i>
+          <p class="buttonText">Submit</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </ion-content>
+</ion-modal-view>

@@ -68,7 +68,7 @@ angular.module('starter')
 		$scope.cart = [];
 	}
 
-	$ionicModal.fromTemplateUrl('../modals/holdModal.html', {
+	$ionicModal.fromTemplateUrl('js/modals/holdModal.html', {
 	scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
@@ -93,7 +93,7 @@ angular.module('starter')
 	// Execute action
 	});
 
-	$ionicModal.fromTemplateUrl('../modals/logoutModal.html', {
+	$ionicModal.fromTemplateUrl('js/modals/logoutModal.html', {
 	scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
@@ -118,7 +118,7 @@ angular.module('starter')
 	// Execute action
 	});
 
-	$ionicModal.fromTemplateUrl('../modals/paymentModal.html', {
+	$ionicModal.fromTemplateUrl('js/modals/paymentModal.html', {
 	scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
@@ -143,7 +143,7 @@ angular.module('starter')
 	// Execute action
 	});
 
-	$ionicModal.fromTemplateUrl('../modals/payTmModal.html', {
+	$ionicModal.fromTemplateUrl('js/modals/payTmModal.html', {
 	scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
