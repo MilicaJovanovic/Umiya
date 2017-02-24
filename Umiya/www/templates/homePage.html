@@ -55,30 +55,16 @@
           </div>
 
           <table class="table dataTable">
-            <tbody>
+            <tbody ng-repeat="cartRow in cart">
               <tr class="dataTableRow">
-                <td class="dataTableItemName">Cola</td>
-                <td class="dataTableItemInfo">1</td>
-                <td class="dataTableItemInfo">15</td>
-                <td class="dataTableItemInfo">15</td>
-              </tr>
-              <tr class="dataTableRow"> 
-                <td class="dataTableItemName">Fanta</td>
-                <td class="dataTableItemInfo">1</td>
-                <td class="dataTableItemInfo">15</td>
-                <td class="dataTableItemInfo">30</td>
-              </tr>
-              <tr class="dataTableRow">
-                <td class="dataTableItemName">Votka</td>
-                <td class="dataTableItemInfo">3</td>
-                <td class="dataTableItemInfo">10</td>
-                <td class="dataTableItemInfo">15</td>
-              </tr>
-              <tr class="dataTableRow">
-                <td class="dataTableItemName">Beer</td>
-                <td class="dataTableItemInfo">3</td>
-                <td class="dataTableItemInfo">10</td>
-                <td class="dataTableItemInfo">15</td>
+                <td class="dataTableItemName">{{cartRow.productName}}</td>
+                <td class="dataTableItemInfo">
+                  <button ng-click="decreaseQuantity(cartRow)" type="button">-</button>
+                  {{cartRow.quantity}}
+                  <button ng-click="increaseQuantity(cartRow)" type="button">+</button>
+                </td>
+                <td class="dataTableItemInfo">{{cartRow.price}}</td>
+                <td class="dataTableItemInfo">{{cartRow.total}}</td>
               </tr>
             </tbody>
           </table>
@@ -124,7 +110,7 @@
                 <i class="ion-android-hand buttonIcon"></i>
                 <p class="buttonText">Hold</p>
               </div>
-              <div class="cartOrderButtonOrange">
+              <div ng-click="cancel()" class="cartOrderButtonOrange">
                 <i class="ion-close buttonIcon"></i>
                 <p class="buttonText">Cancel</p>
               </div>

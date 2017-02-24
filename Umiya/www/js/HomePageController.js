@@ -27,6 +27,47 @@ angular.module('starter')
 		}
 	]
 
+	$scope.cart = [
+		{
+			productName : 'Fanta',
+			quantity: 1,
+			price: 15,
+			total: 15
+		},
+		{
+			productName : 'Cola',
+			quantity: 2,
+			price: 13,
+			total: 26
+		},
+		{
+			productName : 'Pepsi',
+			quantity: 2,
+			price: 15,
+			total: 30
+		},
+		{
+			productName : 'Vodka',
+			quantity: 3,
+			price: 15,
+			total: 45
+		}
+	]
+
+	$scope.increaseQuantity = function(cartRow) {
+		cartRow.quantity = cartRow.quantity + 1;
+	}
+
+	$scope.decreaseQuantity = function(cartRow) {
+		if (cartRow.quantity > 1) {
+			cartRow.quantity = cartRow.quantity - 1;
+		}
+	}
+
+	$scope.cancel = function() {
+		$scope.cart = [];
+	}
+
 	$ionicModal.fromTemplateUrl('../modals/holdModal.html', {
 	scope: $scope,
 		animation: 'slide-in-up'
