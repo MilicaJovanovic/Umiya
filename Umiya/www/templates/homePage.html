@@ -11,122 +11,124 @@
         </div>
       </ion-header-bar>
       <ion-content>
-        <div class="leftDiv">
-          <div class="menuBar">
-            <div class="menuBarPart firstMenuBarPart">
-              <p class="menuBarPartText">All</p>
-            </div>
-            <div class="menuBarPart">
-              <p class="menuBarPartText">Cold drinks</p>
-            </div>
-            <div class="menuBarPart">
-              <p class="menuBarPartText">Ciggarete</p>
-            </div>
-            <div class="menuBarPart">
-              <p class="menuBarPartText">Water</p>
-            </div>
-          </div>
-
-          <div class="menuItems">
-            <div class="menuItemsTitle">
-              <p class="menuItemsTitleText">Cold drinks</p>
+        <div class="mainDiv">
+          <div class="leftDiv">
+            <div class="menuBar">
+              <div class="menuBarPart firstMenuBarPart">
+                <p class="menuBarPartText">All</p>
+              </div>
+              <div class="menuBarPart">
+                <p class="menuBarPartText">Cold drinks</p>
+              </div>
+              <div class="menuBarPart">
+                <p class="menuBarPartText">Ciggarete</p>
+              </div>
+              <div class="menuBarPart">
+                <p class="menuBarPartText">Water</p>
+              </div>
             </div>
 
-            <!-- Products is an array defined in HomePageController.js file. For replacing with actual data, probably received from back-end just put the return of the service into $scope.products. -->
-            <div class="productList">
-              <div class="productListRow">
-              	<div ng-repeat="product in products">
-              		<product-block product="product"></product-block>
-              	</div>
+            <div class="menuItems">
+              <div class="menuItemsTitle">
+                <p class="menuItemsTitleText">Cold drinks</p>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="rightDiv">
-          <div class="shoppingCartTitle">
-            <p class="shoppingCartTitleText">Shopping cart</p>
-          </div>
-
-          <div class="tableHeader">
-            <div class="tableHeaderItem">Products</div>
-            <div class="tableHeaderItem">QTY</div>
-            <div class="tableHeaderItem">Price</div>
-            <div class="tableHeaderItem subtotal">Subtotal</div>
-          </div>
-
-          <table class="table dataTable">
-            <tbody ng-repeat="cartRow in cart">
-              <tr class="dataTableRow">
-                <td class="dataTableItemName">{{cartRow.productName}}</td>
-                <td class="dataTableItemInfo">
-                  <!-- <button ng-click="decreaseQuantity(cartRow)" type="button" class="quantityBtn">-</button> -->
-                  <i class="ion-minus-circled quantityBtn" ng-click="decreaseQuantity(cartRow)"></i>
-                  {{cartRow.quantity}}
-                 <!--  <button ng-click="increaseQuantity(cartRow)" type="button" class="quantityBtn">+</button> -->
-                 <i class="ion-plus-circled quantityBtn" ng-click="increaseQuantity(cartRow)"></i>
-                </td>
-                <td class="dataTableItemInfo">{{cartRow.price}}</td>
-                <td class="dataTableItemInfo">{{cartRow.total}}</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="cart">
-            <div class="cartPart" id="total">
-              <div class="cartPartTitle">
-                Total
-              </div>
-              <div class="cartPartData">
-                105
-              </div>
-            </div>
-            <div class="cartPart">
-              <div class="cartPartTitle">
-                Total Items
-              </div>
-              <div class="cartPartData">
-                8
-              </div>
-            </div>
-            <div class="cartPart">
-              <div class="cartPartTitle">
-                Discount
-              </div>
-              <div class="cartPartData">
-                0
-              </div>
-            </div>
-            <div class="cartPart">
-              <div class="cartPartTitle">
-                Order Tax
-              </div>
-              <div class="cartPartData">
-                0
+              <!-- Products is an array defined in HomePageController.js file. For replacing with actual data, probably received from back-end just put the return of the service into $scope.products. -->
+              <div class="productList">
+                <div class="productListRow">
+                	<div ng-repeat="product in products">
+                		<product-block product="product"></product-block>
+                	</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="cartOrder">
-            <div class="cartOrderRow">
-              <div class="cartOrderButtonOrange firstOrangeBtn" ng-click="openHoldModal()">
-                <i class="ion-android-hand buttonIcon"></i>
-                <p class="buttonText">Hold</p>
+          <div class="rightDiv">
+            <div class="shoppingCartTitle">
+              <p class="shoppingCartTitleText">Shopping cart</p>
+            </div>
+
+            <div class="tableHeader">
+              <div class="tableHeaderItem">Products</div>
+              <div class="tableHeaderItem">QTY</div>
+              <div class="tableHeaderItem">Price</div>
+              <div class="tableHeaderItem subtotal">Subtotal</div>
+            </div>
+
+            <table class="table dataTable">
+              <tbody ng-repeat="cartRow in cart">
+                <tr class="dataTableRow">
+                  <td class="dataTableItemName">{{cartRow.productName}}</td>
+                  <td class="dataTableItemInfo">
+                    <!-- <button ng-click="decreaseQuantity(cartRow)" type="button" class="quantityBtn">-</button> -->
+                    <i class="ion-minus-circled quantityBtn" ng-click="decreaseQuantity(cartRow)"></i>
+                    {{cartRow.quantity}}
+                   <!--  <button ng-click="increaseQuantity(cartRow)" type="button" class="quantityBtn">+</button> -->
+                   <i class="ion-plus-circled quantityBtn" ng-click="increaseQuantity(cartRow)"></i>
+                  </td>
+                  <td class="dataTableItemInfo">{{cartRow.price}}</td>
+                  <td class="dataTableItemInfo">{{cartRow.total}}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="cart">
+              <div class="cartPart" id="total">
+                <div class="cartPartTitle">
+                  Total
+                </div>
+                <div class="cartPartData">
+                  105
+                </div>
               </div>
-              <div ng-click="cancel()" class="cartOrderButtonOrange">
-                <i class="ion-close buttonIcon"></i>
-                <p class="buttonText">Cancel</p>
+              <div class="cartPart">
+                <div class="cartPartTitle">
+                  Total Items
+                </div>
+                <div class="cartPartData">
+                  8
+                </div>
+              </div>
+              <div class="cartPart">
+                <div class="cartPartTitle">
+                  Discount
+                </div>
+                <div class="cartPartData">
+                  0
+                </div>
+              </div>
+              <div class="cartPart">
+                <div class="cartPartTitle">
+                  Order Tax
+                </div>
+                <div class="cartPartData">
+                  0
+                </div>
               </div>
             </div>
 
-            <div class="cartOrderRow">
-              <div class="cartOrderButtonBlue">
-                <i class="ion-printer buttonIcon"></i>
-                <p class="buttonText">Print</p>
+            <div class="cartOrder">
+              <div class="cartOrderRow">
+                <div class="cartOrderButtonOrange firstOrangeBtn" ng-click="openHoldModal()">
+                  <i class="ion-android-hand buttonIcon"></i>
+                  <p class="buttonText">Hold</p>
+                </div>
+                <div ng-click="cancel()" class="cartOrderButtonOrange">
+                  <i class="ion-close buttonIcon"></i>
+                  <p class="buttonText">Cancel</p>
+                </div>
               </div>
-              <div class="cartOrderButtonGreen" ng-click="openPaymentModal()">
-                <i class="ion-cash buttonIcon"></i>
-                <p class="buttonText">Payment</p>
+
+              <div class="cartOrderRow">
+                <div class="cartOrderButtonBlue">
+                  <i class="ion-printer buttonIcon"></i>
+                  <p class="buttonText">Print</p>
+                </div>
+                <div class="cartOrderButtonGreen" ng-click="openPaymentModal()">
+                  <i class="ion-cash buttonIcon"></i>
+                  <p class="buttonText">Payment</p>
+                </div>
               </div>
             </div>
           </div>
