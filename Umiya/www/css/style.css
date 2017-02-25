@@ -201,7 +201,10 @@
 	padding: 0px !important;
 	margin: 0px !important;
 }
-
+.productImg {
+	width: 100%;
+	border-radius: 10px;
+}
 .rightDiv {
 	width: 38%;
 	height: 86vh;
