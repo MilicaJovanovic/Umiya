@@ -224,7 +224,7 @@
 }
 @media screen and (max-height: 620px) {
 	.paymentModal {
-		margin-top: -10%;
+		margin-top: -5%;
 		height: 95vh;
 	}
 }
@@ -250,6 +250,27 @@
 }
 
 /*PayTM modal*/
+.payTmModal {
+	height: 45vh;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   padding-bottom: 10px;
+   top: 70px !important;
+}
+@media screen and (max-height: 620px) {
+	.payTmModal {
+		height: 75vh;
+		margin-top: -4%;
+	}
+}
+@media screen and (max-height: 950px) {
+	.payTmModal {
+		height: 60vh;
+	}
+}
 .payTmNoticeDiv {
 	width: 50%;
 	margin-left: 25%;
@@ -271,13 +292,14 @@
 	margin-left: 20%;
 	height: 200px;
 }
-.qrImage {
-	position: absolute;
+.qrImg {
+	width: 50%;
+	margin-left: 50%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('img/qr.png');
+    background-image: url('/img/qr.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
