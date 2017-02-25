@@ -304,6 +304,7 @@
 }
 .dataTableRow {
 	height: 30px !important;
+	border-bottom: 1px solid #acb0b7;
 }
 .dataTableItemInfo {
 	width: 25% !important;

@@ -17,8 +17,8 @@
           <tr class="dataTableRowModal" ng-repeat="cartRow in cart">
             <td class="dataTableItemNameModal">{{cartRow.productName}}</td>
             <td class="dataTableItemInfoModal">{{cartRow.quantity}}</td>
-            <td class="dataTableItemInfoModal">{{cartRow.price}} ₹</td>
-            <td class="dataTableItemInfoModal subtotalDataModal">{{cartRow.total}} ₹</td>
+            <td class="dataTableItemInfoModal">₹ {{cartRow.price}}</td>
+            <td class="dataTableItemInfoModal subtotalDataModal">₹ {{cartRow.total}}</td>
           </tr>
         </tbody>
       </table>
