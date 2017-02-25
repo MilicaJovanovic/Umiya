@@ -13,33 +13,29 @@
       <ion-content scroll="false">
         <div class="leftDiv">
           <div class="menuBar">
-            <div class="menuBarPart">
+            <div id="menuBtnAll" ng-click="changeSelectionAll()" class="menuBarPart">
               <p class="menuBarPartText">All</p>
             </div>
-            <div class="menuBarPart">
+            <div id="menuBtnColdDrinks" ng-click="changeSelectionColdDrinks()" class="menuBarPart selectedPart">
               <p class="menuBarPartText">Cold drinks</p>
             </div>
-            <div class="menuBarPart">
+            <div id="menuBtnCiggarete" ng-click="changeSelectionCiggarete()" class="menuBarPart">
               <p class="menuBarPartText">Ciggarete</p>
             </div>
-            <div class="menuBarPart">
+            <div id="menuBtnWater" ng-click="changeSelectionWater()" class="menuBarPart">
               <p class="menuBarPartText">Water</p>
             </div>
-            <div class="menuBarPart">
+            <div id="menuBtnFood" ng-click="changeSelectionFood()" class="menuBarPart">
               <p class="menuBarPartText">Food</p>
             </div>
-            <div class="menuBarPart">
+            <div id="menuBtnDrink" ng-click="changeSelectionDrink()" class="menuBarPart">
               <p class="menuBarPartText">Drink</p>
             </div>
-            <div class="menuBarPart">
+            <div id="menuBtnBeer" ng-click="changeSelectionBeer()" class="menuBarPart">
               <p class="menuBarPartText">Beer</p>
             </div>
           </div>
           <div class="menuItems">
-            <div class="menuItemsTitle">
-              <p class="menuItemsTitleText">Cold drinks</p>
-            </div>
-
               <!-- Products is an array defined in HomePageController.js file. For replacing with actual data, probably received from back-end just put the return of the service into $scope.products. -->
               <div class="productList">
                 <div class="productListRow">

@@ -3,7 +3,7 @@
 	display: block;
 	float: left;
 	width: 100%;
-	height: 80px;
+	height: 60px;
     background: #4c9c4f;
     background: -webkit-linear-gradient(#4c9c4f, #ADF3B0);
     background: -o-linear-gradient(#4c9c4f, #ADF3B0);
@@ -16,39 +16,39 @@
 }
 .headerTitle {
 	float: left;
-	font-size: 3em;
+	font-size: 2.6em;
 	color: white;
 	margin-left: 20px !important;
-	margin-top: 10px !important;
+	margin-top: 2px !important;
 }
 .dateAndTime {
 	color: white;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	float: left;
 	margin-left: 10%;
-	margin-top: 28px;
+	margin-top: 17px;
 }
 .userInfo {
 	float: left;
 	width: 70%;
 }
 .welcome {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	color: white;
 	float: right;
-	margin-top: 25px !important;
+	margin-top: 15px !important;
 	margin-right: 15px;
 }
 .logoutBtn {
 	float: right;
 	width: 20%;
-	height: 40px;
+	height: 30px;
 	border: none !important;
 	background-color: #337AB7;
 	color: white;
 	border-radius: 5px;
 	font-size: 1.2em !important;
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-right: 10px;
 }
 .mainDiv {
@@ -103,6 +103,10 @@
 	height: 50px;
 	width: 150px;
 	border-right: 1px solid grey;
+}
+.selectedPart {
+	font-weight: bold;
+	background-color: rgb(183,119,73);
 }
 .menuBarPartText {
 	color: white;
@@ -264,17 +268,23 @@
 }
 .tableArea {
 	margin-top: 20px;
-	min-height: 35vh;
-	max-height: 35vh !important;
+	min-height: 50vh;
+	max-height: 50vh !important;
 	overflow-y: auto;
+}
+@media screen and (max-height: 950px) {
+	.tableArea {
+		min-height: 35vh;
+		max-height: 35vh !important;
+	}
 }
 @media screen and (max-height: 800px) {
 	.tableArea {
-		min-height: 22vh;
-		max-height: 22vh !important;
+		min-height: 35vh;
+		max-height: 35vh !important;
 	}
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 740px) {
 	.tableArea {
 		min-height: 19vh;
 		max-height: 19vh !important;
@@ -335,7 +345,7 @@
 	text-align: center;
 	padding-top: 3px;
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 1080px) {
 	.cartPartTitle {
 		font-size: .9em;
 		height: 20px;
@@ -363,7 +373,7 @@
 	background: #dd9a65;
 	text-align: center;
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 1080px) {
 	.cartPartData {
 		font-size: .9em;
 		height: 20px;
@@ -392,7 +402,7 @@
 	padding-top: 22px;
 	border-top: 2px solid #337ab7;
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 1080px) {
 	.cartOrderButtonOrange {
 		height: 40px;
 		padding-top: 6px;
@@ -425,7 +435,7 @@
 	margin-right: 4%;
 	margin-top: 20px;
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 1080px) {
 	.cartOrderButtonBlue {
 		height: 40px;
 		padding-top: 6px;
@@ -443,7 +453,7 @@
 	border-top: 2px solid #337ab7;
 	margin-top: 20px;
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 1080px) {
 	.cartOrderButtonGreen {
 		height: 40px;
 		padding-top: 6px;

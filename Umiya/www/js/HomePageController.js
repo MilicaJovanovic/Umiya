@@ -273,6 +273,76 @@ angular.module('starter')
 		$scope.cart = [];
 	}
 
+	$scope.changeSelectionAll = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart selectedPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart";
+	}
+
+	$scope.changeSelectionColdDrinks = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart selectedPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart";
+	}
+
+	$scope.changeSelectionCiggarete = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart selectedPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart";
+	}
+
+	$scope.changeSelectionWater = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart selectedPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart";
+	}
+
+	$scope.changeSelectionFood = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart selectedPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart";
+	}
+
+	$scope.changeSelectionDrink = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart selectedPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart";
+	}
+
+	$scope.changeSelectionBeer = function() {
+		document.getElementById("menuBtnAll").className = "menuBarPart";
+		document.getElementById("menuBtnColdDrinks").className = "menuBarPart";
+		document.getElementById("menuBtnCiggarete").className = "menuBarPart";
+		document.getElementById("menuBtnWater").className = "menuBarPart";
+		document.getElementById("menuBtnFood").className = "menuBarPart";
+		document.getElementById("menuBtnDrink").className = "menuBarPart";
+		document.getElementById("menuBtnBeer").className = "menuBarPart selectedPart";
+	}
+
 	$ionicModal.fromTemplateUrl('js/modals/holdModal.html', {
 	scope: $scope,
 		animation: 'slide-in-up'
